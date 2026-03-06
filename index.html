@@ -3,9 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-4</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        font-family: geist;
+    }
+    .circle{
+        list-style-type:disc;
+    }
+</style>
 </head>
-<body>
-    
+<body  class="min-h-screen max-w-screen-lg mx-auto bg-[#F4F5F7]">
+   <header class=" mt-[45px] ml-[130px]">
+    <h1 class="font-bold text-[32px] text-[#002C5C]">Job Application Tracker</h1> 
+   </header>
+   <section class="mx-auto w-11/12 my-7 ">
+    <div class="tab-container flex justify-between gap-3">
+        <div id="total" class="bg-white rounded-md w-[390px] p-5"> 
+            <h1 class="font-medium text-[14px] text-[#323B49]">Total</h1>
+            <p id="total-number" class="font-bold text-[24px] text-[#002C5C]">8</p>
+        </div>
+        <div id="interview" class="bg-white rounded-md w-[390px] p-5"><h1 class="font-medium text-[14px] text-[#323B49]">Interview</h1>
+        <p id="interview-number" class="font-bold text-[24px] text-[#10B981]">0</p></div>
+        <div id="rejected" class="bg-white rounded-md w-[390px] p-5"><h1 class="font-medium text-[14px] text-[#323B49]">Rejected</h1>
+        <p id="rejected-number" class="font-bold text-[24px] text-[#EF4444]">0</p></div>
+    </div>
+   </section>
+   <section id="btn-container" class=" ml-[40px]">
+    <h1 class="font-semibold text-[20px] text-[#002C5C] m-5">Available Jobs</h1>
+    <div class="flex gap-[10px]">
+      <button class="btn btn-active btn-info">All</button>
+      <button class="btn btn-active btn-info">Interview</button>
+      <button class="btn btn-active btn-info">Rejected</button>
+    </div>
+   </section >
+
+<section id="all">
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">React Native Developer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">Remote</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">$130,000-$175,000</li>
+    </ul>
+<button id="" class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Build cross-platform mobile applications  using React Native. Work on products used by millions of users worldwide.</p>
+   <div class="flex gap-[10px]">
+     <button id="" class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">Web Designer & Developer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">Los Angeles, CA</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">FPart-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle"> $80,000 - $120,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">DataViz Solutions</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">Data Visualization Specialist</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">Boston, MA</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle"> $125,000 - $165,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
+</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">CloudFirst Inc</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">Backend Developer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">Seattle, WA</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">
+ $140,000 - $190,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">Innovation Labs</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">UI/UX Engineer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">Austin, TX</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle"> $110,000 - $150,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">MegaCorp Solutions</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">JavaScript Developer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">New York, NY</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">$130,000-$170,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">StartupXYZ</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">Full Stack Engineer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">San Francisco, CA</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle"> $120,000 - $160,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">Build cross-platform mobile applications  using React Native. Work on products used by millions of users worldwide.</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+
+   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+    <h1 class="font-semibold text-[18px] text-[#002C5C]">TechCorp Industries</h1>
+    <p class="font-normal text-[16px] text-[#64748B]">Senior Frontend Developer</p>
+    <ul class="flex gap-7 ">
+        <li class="font-normal text-[14px] text-[#64748B]">San Francisco, CA</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">Full-time</li>
+        <li class="font-normal text-[14px] text-[#64748B] circle">$130,000-$175,000</li>
+    </ul>
+<button class="not-applied-btn btn btn-soft font-medium text-[14px] text-[#002C5C]">NOT APPLIED</button>
+    <p class="text-[14px] text-[#323B49]">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
+   <div class="flex gap-[10px]">
+     <button class=" interview-btn btn btn-outline btn-success font-semibold text-[14px]">INTERVIEW</button>
+    <button class="rejected-btn btn btn-outline btn-secondary font-semibold text-[14px]">REJECTED</button>
+   </div>
+   <div class="absolute top-[20px] right-[20px]"><button class=""><img src="./Group 1.png" alt=""></button></div>
+   </section>
+
+</section>
+
+<script src="./js/JS-intervew.js"></script>
+
 </body>
 </html>
