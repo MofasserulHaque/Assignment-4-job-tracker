@@ -22,7 +22,8 @@
 </style>
 </head>
 <body  class="min-h-screen max-w-screen-lg mx-auto bg-[#F4F5F7]">
-   <header class=" mt-[45px] ml-[130px]">
+ <section class="sticky -top-50 z-10  bg-[#F4F5F7] pb-[20px]">
+      <header class=" mt-[45px] ml-[130px]">
     <h1 class="font-bold text-[32px] text-[#002C5C]">Job Application Tracker</h1> 
    </header>
    <section class="mx-auto w-11/12 my-7 ">
@@ -38,18 +39,19 @@
     </div>
    </section>
    <section id="btn-container" class=" ml-[40px]">
-    <h1 class="font-semibold text-[20px] text-[#002C5C] m-5">Available Jobs</h1>
+    <h1 class="font-semibold text-[20px] text-[#002C5C] m-5 sticky">Available Jobs</h1>
     <div class="flex gap-[10px]">
-      <button class="btn btn-active btn-info">All</button>
-      <button class="btn btn-active btn-info">Interview</button>
-      <button class="btn btn-active btn-info">Rejected</button>
+      <button id="all-container" class="btn ">All</button>
+      <button id="interview-container" class="btn ">Interview</button>
+      <button id="rejected-container" class="btn ">Rejected</button>
     </div>
    </section >
+ </section>
 
 <section id="all">
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="mobile-first-crop" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h1>
     <p class="font-normal text-[16px] text-[#64748B]">React Native Developer</p>
     <ul class="flex gap-7 ">
@@ -67,7 +69,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="webflow-agency" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h1>
     <p class="font-normal text-[16px] text-[#64748B]">Web Designer & Developer</p>
     <ul class="flex gap-7 ">
@@ -85,7 +87,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="dataviz-solutions" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">DataViz Solutions</h1>
     <p class="font-normal text-[16px] text-[#64748B]">Data Visualization Specialist</p>
     <ul class="flex gap-7 ">
@@ -104,7 +106,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="cloudfirst-inc" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">CloudFirst Inc</h1>
     <p class="font-normal text-[16px] text-[#64748B]">Backend Developer</p>
     <ul class="flex gap-7 ">
@@ -123,7 +125,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="innovation-labs" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">Innovation Labs</h1>
     <p class="font-normal text-[16px] text-[#64748B]">UI/UX Engineer</p>
     <ul class="flex gap-7 ">
@@ -141,7 +143,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="megacorp-solutions" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">MegaCorp Solutions</h1>
     <p class="font-normal text-[16px] text-[#64748B]">JavaScript Developer</p>
     <ul class="flex gap-7 ">
@@ -159,7 +161,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="startupxyz" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">StartupXYZ</h1>
     <p class="font-normal text-[16px] text-[#64748B]">Full Stack Engineer</p>
     <ul class="flex gap-7 ">
@@ -177,7 +179,7 @@
    </section>
 
 
-   <section class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
+   <section id="techcorp-industries" class="bg-white m-[20px] p-[20px] space-y-5  ml-[40px]  rounded-[20px] relative">
     <h1 class="font-semibold text-[18px] text-[#002C5C]">TechCorp Industries</h1>
     <p class="font-normal text-[16px] text-[#64748B]">Senior Frontend Developer</p>
     <ul class="flex gap-7 ">
@@ -196,7 +198,17 @@
 
 </section>
 
+<section id="container-html" class=" hidden "></section>
+
+<section id="rejected-html" class="hidden"></section>
+
+    <script src="./js/machine.js"></script> 
+
+    <script src="./js/JS-rejected.js"></script>
 <script src="./js/JS-intervew.js"></script>
 
+<script>
+  
+</script>
 </body>
 </html>
