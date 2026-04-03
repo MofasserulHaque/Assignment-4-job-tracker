@@ -9,6 +9,12 @@ document.getElementById('all-container').addEventListener('click',function(){
 findRejectedBtn.classList.add('hidden');
 const removeHidden=document.querySelector('#container-html');
 removeHidden.classList.add('hidden');
+const findJObsNumber=document.getElementById('job-number');
+findJObsNumber.classList.remove('hidden')
+ const interviewNumber=document.getElementById("interview-jobs-number");
+ interviewNumber.classList.add('hidden');
+ const rejectedNumber=document.getElementById("rejected-jobs-number");
+ rejectedNumber.classList.add('hidden');
 })
 
  const tabs=document.querySelectorAll('#btn-container button');
@@ -21,4 +27,23 @@ removeHidden.classList.add('hidden');
 
 })
  }
- 
+
+let jobsNumber=document.getElementById('job-number').innerText;
+const deleteSection=document.getElementsByClassName('delete-btn');
+for(let j=0;j<deleteSection.length;j++){
+    deleteSection[j].addEventListener('click',function(event){
+      const findTheMain=event.target.parentElement;
+      const parentFind=findTheMain.parentElement.parentElement;
+      parentFind.classList.add('hidden');
+      event.stopPropagation();
+      jobsNumber--;
+      const findDeleteNumber=document.getElementById('job-number');
+     findDeleteNumber.innerText=jobsNumber;
+    //  console.log(jobsNumber)
+    
+    })
+}
+
+
+
+

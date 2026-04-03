@@ -14,7 +14,17 @@ for(let i=0;i<rejectedbtnCollection.length;i++){
         )
         const rejectedfindSection=document.getElementById('rejected-html');
         rejectedfindSection.appendChild(rejectednewSection);
-            rejectedfindSection.classList.add('hidden')
+            rejectedfindSection.classList.add('hidden');
+            const showRejectedBtn=rejectedgrantSection.querySelector('.show-rejected-btn');
+            showRejectedBtn.classList.remove('hidden');
+            const newShowBtn=rejectednewSection.querySelector('.show-rejected-btn');
+            newShowBtn.classList.remove('hidden');
+            
+            const removeinterview=rejectedgrantSection.querySelector('.show-interview-btn');
+            removeinterview.classList.add('hidden');
+            const removeNewinterview=rejectednewSection.querySelector('.show-interview-btn');
+            removeNewinterview.classList.add('hidden');
+
     })
 }
 
@@ -26,6 +36,12 @@ findrejected.classList.add('hidden');
 const rejectedremoveHidden=document.getElementById('rejected-html');
 rejectedremoveHidden.classList.remove('hidden');
 
+const findJObsNumber=document.getElementById('job-number');
+findJObsNumber.classList.add('hidden');
+const interviewNumber=document.getElementById("interview-jobs-number");
+ interviewNumber.classList.add('hidden');
+const rejectedNumber=document.getElementById("rejected-jobs-number");
+ rejectedNumber.classList.remove('hidden');
 
 })
 
@@ -40,7 +56,11 @@ for(let i=0;i<checkRejectedClick.length;i++){
     findRejectedNumber.innerHTML=Number(summation);
         // if(findRejectedNumber.innerHTML>=1){
           const findRejectedByDefault=document.getElementById("rejected-by-default");
-          findRejectedByDefault.classList.add('hidden')
+          findRejectedByDefault.classList.add('hidden');
+
+        const rejectedNumber=document.getElementById("rejected-jobs-number");
+        rejectedNumber.innerText=summation;
+
     })
 
 }

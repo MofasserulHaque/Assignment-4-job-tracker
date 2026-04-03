@@ -15,7 +15,18 @@ for(let i=0;i<btnCollection.length;i++){
         const findSection=document.getElementById('container-html');
         findSection.appendChild(newSection);
    findSection.classList.add('hidden');
-  
+   const showBTN=grantSection.querySelector('.show-interview-btn');
+   showBTN.classList.remove('hidden');
+   const newSectionShwBtn=newSection.querySelector('.show-interview-btn');
+   newSectionShwBtn.classList.remove('hidden');
+   const removeReject=grantSection.querySelector('.show-rejected-btn');
+   removeReject.classList.add('hidden');
+   const removeNEwreject=newSection.querySelector('.show-rejected-btn');
+   removeNEwreject.classList.add('hidden');
+
+      
+
+
     })
 }
 
@@ -26,6 +37,13 @@ const findRejectedBtn=document.getElementById('rejected-html');
 findRejectedBtn.classList.add('hidden');
 const removeHidden=document.querySelector('#container-html');
 removeHidden.classList.remove('hidden');
+
+const findJObsNumber=document.getElementById('job-number');
+findJObsNumber.classList.add('hidden');
+ const rejectedNumber=document.getElementById("rejected-jobs-number");
+ rejectedNumber.classList.add('hidden');
+ const interviewNumber=document.getElementById("interview-jobs-number");
+ interviewNumber.classList.remove('hidden')
 
 })
 
@@ -42,4 +60,8 @@ checkIntervewClick[j].addEventListener('click',function(event){
 
  const findByDefault=document.getElementById("container-by-default");
  findByDefault.classList.add('hidden');
+
+ const interviewNumber=document.getElementById("interview-jobs-number");
+ interviewNumber.innerText=sum
+
 })
