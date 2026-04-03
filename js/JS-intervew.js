@@ -53,6 +53,9 @@ for(let j=0;j<checkIntervewClick.length;j++)
 checkIntervewClick[j].addEventListener('click',function(event){
     // for(i=0;i<checkIntervewClick.length;i++)
          event.stopPropagation();
+    if(sum>=8){
+        return;
+    }
         sum++;
 //   console.log(sum);
  const findInterviewNumber=document.getElementById('interview-number');

@@ -51,6 +51,9 @@ const checkRejectedClick=document.querySelectorAll('#all .rejected-btn');
 for(let i=0;i<checkRejectedClick.length;i++){
     checkRejectedClick[i].addEventListener('click',function(event){
         event.stopPropagation();
+        if(summation>=8){
+            return;
+        }
         summation++;
         const findRejectedNumber=document.getElementById('rejected-number');
     findRejectedNumber.innerHTML=Number(summation);
