@@ -25,6 +25,10 @@ Event Bubbling:is a concept of bubbling means event event start from the target 
 Working Method:when a button is clicked it reaches its parent element. Event first happens on button.then it bubbles up to the parent then continues upward . 
 
 ###(4)Answer of Forth Question:
+Event Delegation:it allows to handle events efficiently on multiple child elements by attaching a single event listener to parent element instead of attaching separate listeners to each child.
+Importance:it reduces to one listener on parent instead of many listeners on children.Avoids repetitive code for multiple elements.
+
+###(5)Answer of Fifth Question:
 
 preventDefault() stops the default behavior of an element but can not stop event bubbling.
 stopPropagation() stops the event bubbling but it does not stop the default behavior.
